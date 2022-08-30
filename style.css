@@ -5,3 +5,15 @@ body{
 .btn{
    width: 4rem; 
 }
+
+.playerScore{
+    display: flex;
+    font-size: 2rem;
+    float: left;
+}
+
+.computerScore{
+    display: flex;
+    float: right;
+    font-size: 2rem;
+}
