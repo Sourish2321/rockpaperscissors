@@ -3,7 +3,11 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
 let randomGuess
-
+let playerSelection
+const rock = document.querySelector('#rock');
+const paper = document.querySelector('#paper');
+const scissors = document.querySelector('#scissors');
+const gameTitle = document.querySelector('#game');
 // Computer Plays The Game
 
 function computerPlay() {
@@ -43,12 +47,21 @@ function playRound(computerSelection, playerSelection) {
 // GAME Function
 
 function game() {
-    let playerSelection = prompt("What will you choose?")
-    playerSelection = playerSelection.toLowerCase()
     let computerSelection = computerPlay()
     return playRound(computerSelection, playerSelection);
 }
 
-for (let i = 0; i < 5; i++) {
-    console.log(game())
-}
+rock.addEventListener('click', () =>  {
+    playerSelection = "rock"
+    gameTitle.textContent = game()
+} )
+
+paper.addEventListener('click', () =>  {
+    playerSelection = "paper"
+    gameTitle.textContent = game()
+} )
+
+scissors.addEventListener('click', () =>  {
+    playerSelection = "scissors"
+    gameTitle.textContent = game()
+} )
