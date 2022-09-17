@@ -1,19 +1,48 @@
 body{
     text-align: center;
+    font-family: 'Nabla', cursive;
+    background-color: #040720;
+    margin: 10rem;
 }
 
 .btn{
-   width: 4rem; 
+   width: 4rem;
+   background-color: blue;
 }
 
-.playerScore{
-    display: flex;
-    font-size: 2rem;
-    float: left;
+
+@media only screen and (min-width: 800px) {
+    body {
+        margin: 10rem;
+        font-size: 1rem;
+    }
+        .playerScore{
+        display: flex;
+        font-size: 2rem;
+        float: left;
+    }
+
+    .computerScore{
+        display: flex;
+        float: right;
+        font-size: 2rem;
+    }
 }
 
-.computerScore{
-    display: flex;
-    float: right;
-    font-size: 2rem;
-}
+
+    @media only screen and (max-width: 620px) {
+    body {
+        margin: 1rem;
+        font-size: 20px;
+    }
+        .playerScore{
+        display: flex;
+        font-size: 20px;
+    }
+
+    .computerScore{
+        display: flex;
+        font-size: 20px;
+    }
+    }
+
