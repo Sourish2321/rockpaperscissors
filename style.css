@@ -46,3 +46,12 @@ body{
     }
     }
 
+.btn-try {
+    background-color: #040720;
+    border-color: blue;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}

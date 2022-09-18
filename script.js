@@ -78,10 +78,10 @@ rock.addEventListener('click', () =>  {
     playerSelection = "rock"
     gameTitle.textContent = game()
     if (playerScore == 5){
-        winning.textContent = "YOU WON"
+        window.location="won.html"
     }
     else if (computerScore == 5){
-        winning.textContent = "you lost"
+        window.location="lost.html"
     }
 } )
 
@@ -89,10 +89,10 @@ paper.addEventListener('click', () =>  {
     playerSelection = "paper"
     gameTitle.textContent = game()
     if (playerScore == 5){
-        winning.textContent = "YOU WON"
+        window.location="won.html"
     }
     else if (computerScore == 5){
-        winning.textContent = "you lost"
+        window.location="lost.html"
     }
 } )
 
@@ -100,10 +100,10 @@ scissors.addEventListener('click', () =>  {
     playerSelection = "scissors"
     gameTitle.textContent = game()
     if (playerScore == 5){
-        winning.textContent = "YOU WON"
+        window.location="won.html"
     }
     else if (computerScore == 5){
-        winning.textContent = "you lost"
+        window.location="lost.html"
     }
 } )
 
